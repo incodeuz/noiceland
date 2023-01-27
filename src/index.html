@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="dark:bg-slate-700 text-white">
+    <div
+      class="flex-col align-center justify-center min-h-full items-center py-12 px-4 sm:px-6 lg:px-8"
+    >
+      <div class="m-auto w-full max-w-md space-y-8">
+        <div>
+          <img
+            class="mx-auto h-12 w-auto"
+            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+            alt="Your Company"
+          />
+          <h2
+            class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900"
+          >
+            Tailwind Todo
+          </h2>
+        </div>
+        <div class="mt-8 space-y-6">
+          <input type="hidden" name="remember" value="true" />
+          <div class="-space-y-px rounded-md shadow-sm">
+            <div>
+              <label for="email-address" class="sr-only">Email address</label>
+              <input
+                id="todo-title"
+                name="todo-title"
+                type="text"
+                autocomplete="email"
+                required
+                class="relative block w-full appearance-none rounded border border-gray-300 px-3 py-2 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"
+                placeholder="Todo title"
+              />
+            </div>
+          </div>
+
+          <div>
+            <button
+              id="btn"
+              type="submit"
+              class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            >
+              Add todo
+            </button>
+          </div>
+          <div>
+            <button
+              id="btn-mode"
+              class="group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+            >
+              Dark mode
+            </button>
+          </div>
+          <div class="flex flex-col gap-2" id="container"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../app.js"></script>
+  </body>
+</html>
